@@ -35,7 +35,7 @@ where values for the `stacklet_` prefixed variables are provided by Stacklet.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.18.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 6.2 |
 
 ## Modules
 
