@@ -11,7 +11,7 @@ To use this module:
 module "org-read" {
     source = "stacklet/onboarding-org-read/aws"
     version = "0.1.0"
-    
+
     resource_prefix = "<PREFIX>"
 
     stacklet_external_id       = "<EXTERNAL_ID>"
