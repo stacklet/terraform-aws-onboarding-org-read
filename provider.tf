@@ -6,9 +6,9 @@ terraform {
     }
   }
 
-  # startswith/endswith in the iam_path validation landed in Terraform 1.3, but
-  # the floor sits at 1.5.7: 1.0.8 through 1.5.6 allow an arbitrary file write
-  # during init on crafted configuration (CVE-2023-4782), and the fix was never
-  # backported below 1.5.7.
-  required_version = ">= 1.5.7"
+  # The floor is a Terraform line that still receives patches, not the oldest
+  # release that can run this module. The oldest is 1.3, where startswith and
+  # endswith in the iam_path validation landed. Nothing is gained by supporting
+  # that far back, and 1.13 and earlier no longer get security fixes.
+  required_version = ">= 1.14.0"
 }
