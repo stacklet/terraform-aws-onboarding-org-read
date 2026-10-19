@@ -10,7 +10,7 @@ To use this module:
 ```terraform
 module "org-read" {
     source = "stacklet/onboarding-org-read/aws"
-    version = "0.1.0"
+    version = "0.1.1"
 
     resource_prefix = "<PREFIX>"
 
@@ -22,6 +22,16 @@ module "org-read" {
 
 where values for the `stacklet_` prefixed variables are provided by Stacklet.
 
+
+## Versioning
+
+This module is published to the [Terraform Registry](https://registry.terraform.io/modules/stacklet/onboarding-org-read/aws).
+Set `source` to the registry address and pin `version` to a release.
+
+`version` takes the usual constraint syntax. This module is pre-1.0, and on a
+0.x line a minor release is where it ships breaking changes, so pin at the
+patch level: `~> 0.1.0` accepts `0.1.1` and later patches and holds at `0.2.0`.
+Read the release notes before moving to a new minor.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
